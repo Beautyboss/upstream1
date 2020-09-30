@@ -52,7 +52,7 @@ export const filters = [
       // config value to that.
       //
       // See: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-      searchTimeZone: 'Etc/UTC',
+      searchTimeZone: 'Etc/GMT+2',
 
       // Options for the minimum duration of the booking
       options: [
@@ -92,11 +92,54 @@ export const filters = [
     config: {},
   },
   {
-    id: 'yogaStyles',
-    label: 'Yoga styles',
+    id: 'brows',
+    label: 'Brows',
     type: 'SelectMultipleFilter',
     group: 'secondary',
-    queryParamNames: ['pub_yogaStyles'],
+    queryParamNames: ['pub_brows'],
+    config: {
+      searchMode: 'has_all',
+      options: [
+        { key: 'brow lamination/lift', label: 'Brow lamination/lift' },
+        { key: 'brow tint', label: 'Brow tint' },
+      ],
+    },
+  },
+  {
+    id: 'nails',
+    label: 'Nails',
+    type: 'SelectMultipleFilter',
+    group: 'secondary',
+    queryParamNames: ['pub_nails'],
+    config: {
+      searchMode: 'has_all',
+      options: [
+        { key: 'acrylic nails', label: 'Acrylic nails' },
+        { key: 'gel nails', label: 'Gel nails' },
+        { key: 'manicure shellac/gellac', label: 'Manicure shellac/gellac' },
+        { key: 'pedicure', label: 'Pedicure' },
+      ],
+    },
+  },
+  {
+    id: 'tan',
+    label: 'Tan',
+    type: 'SelectMultipleFilter',
+    group: 'secondary',
+    queryParamNames: ['pub_Tan'],
+    config: {
+      searchMode: 'has_all',
+      options: [
+        { key: 'spraytan', label: 'Spraytan' },
+      ],
+    },
+  },
+  {
+    id: 'lashes',
+    label: 'Lashes',
+    type: 'SelectMultipleFilter',
+    group: 'secondary',
+    queryParamNames: ['pub_lashes'],
     config: {
       // Optional modes: 'has_all', 'has_any'
       // https://www.sharetribe.com/api-reference/marketplace.html#extended-data-filtering
@@ -107,17 +150,14 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'ashtanga', label: 'Ashtanga' },
-        { key: 'hatha', label: 'Hatha' },
-        { key: 'kundalini', label: 'Kundalini' },
-        { key: 'restorative', label: 'Restorative' },
-        { key: 'vinyasa', label: 'Vinyasa' },
-        { key: 'yin', label: 'Yin' },
+        { key: 'eyelash extensions', label: 'Eyelash extensions' },
+        { key: 'lash lift', label: 'Lash lift' },
+        { key: 'last tint', label: 'Lash tint' },
       ],
     },
   },
   {
-    id: 'certificate',
+    id: 'certificae',
     label: 'Certificate',
     type: 'SelectSingleFilter',
     group: 'secondary',
@@ -129,8 +169,7 @@ export const filters = [
       // to make filter customizations a bit easier.
       options: [
         { key: 'none', label: 'None', hideFromFilters: true, hideFromListingInfo: true },
-        { key: '200h', label: 'Registered yoga teacher 200h' },
-        { key: '500h', label: 'Registered yoga teacher 500h' },
+        { key: 'certificate', label: 'Certificate' },
       ],
     },
   },

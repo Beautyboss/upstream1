@@ -9,52 +9,52 @@ const { LatLng, LatLngBounds } = sdkTypes;
 // `predictionPlace` (util.types.place) properties.
 export default [
   {
-    id: 'default-new-york',
+    id: 'default-copenhagen',
     predictionPlace: {
-      address: 'New York City, New York, USA',
+      address: 'Copenhagen, Denmark',
       bounds: new LatLngBounds(
-        new LatLng(40.917576401307, -73.7008392055224),
-        new LatLng(40.477399, -74.2590879797556)
+        new LatLng(55.75536934, 12.6989751),
+        new LatLng(55.58585048, 12.44416076)
       ),
     },
   },
   {
-    id: 'default-los-angeles',
+    id: 'default-aarhus',
     predictionPlace: {
-      address: 'Los Angeles, California, USA',
+      address: 'Aarhus, Denmark',
       bounds: new LatLngBounds(
-        new LatLng(34.161440999758, -118.121305008073),
-        new LatLng(33.9018913203336, -118.521456965901)
+        new LatLng(56.17896808 , 10.25444671),
+        new LatLng(56.11722603, 10.16048869)
       ),
     },
   },
   {
-    id: 'default-san-francisco',
+    id: 'default-odense',
     predictionPlace: {
-      address: 'San Francisco, California, USA',
+      address: 'Odense, Denmark',
       bounds: new LatLngBounds(
-        new LatLng(37.8324430069081, -122.354995082683),
-        new LatLng(37.6044780500533, -122.517910874663)
+        new LatLng(55.43220618, 10.43225521),
+        new LatLng(55.37262303, 10.34330096)
       ),
     },
   },
   {
-    id: 'default-seattle',
+    id: 'default-aalborg',
     predictionPlace: {
-      address: 'Seattle, Washington, USA',
+      address: 'Aalborg, Denmark',
       bounds: new LatLngBounds(
-        new LatLng(47.7779392908564, -122.216605992108),
-        new LatLng(47.3403950185547, -122.441233019046)
+        new LatLng(57.07388084, 9.95788619),
+        new LatLng(57.0223552, 9.87758494)
       ),
     },
   },
   {
     id: 'default-portland',
     predictionPlace: {
-      address: 'Portland, Oregon, USA',
+      address: 'Esbjerg, Denmark',
       bounds: new LatLngBounds(
-        new LatLng(45.858099013046, -122.441059986416),
-        new LatLng(45.3794799927623, -122.929215816001)
+        new LatLng(55.49920252, 8.4956667),
+        new LatLng(55.44257717, 8.4109815)
       ),
     },
   },
